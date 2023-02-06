@@ -1,0 +1,14 @@
+Install Nginx on your server.
+Create the index.html, upload.php, and download.php files with the code I provided earlier.
+Place these files in a directory that is accessible by Nginx. The default location is usually /var/www/html/.
+Create a server block in the Nginx configuration file, typically located at /etc/nginx/sites-available/default.
+In the server block, set the root directory to the location of your PHP files. You'll also need to specify the location for PHP processing by including the following block of code:
+javascript
+Copy code
+location ~ \.php$ {
+  include snippets/fastcgi-php.conf;
+  fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+}
+Replace php7.4-fpm.sock with the appropriate Unix socket for your installed PHP version.
+Restart the Nginx service for the changes to take effect.
+Your PHP code should now be accessible through Nginx and you should be able to upload and download files through the upload.php and download.php pages.
