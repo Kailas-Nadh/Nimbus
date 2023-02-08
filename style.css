@@ -1,6 +1,6 @@
 .container {
   width: 500px;
-  height: 400px;
+  height: 550px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,8 +27,8 @@ input[type="text"], input[type="password"] {
 position: absolute;
 width: 374px;
 height: 48px;
-left: 1020px;
-top: 380px;
+left: 1010px;
+top: 480px;
 
 background: #FFFFFF;
 border: 1px solid #7A7A7A;
@@ -53,8 +53,8 @@ input[type="text"], input[type="username"] {
 position: absolute;
 width: 374px;
 height: 48px;
-left: 1020px;
-top: 300px;
+left: 1010px;
+top: 400px;
 
 font-family: 'Roboto';
 font-style: normal;
@@ -70,8 +70,8 @@ input[type="submit"] {
 position: absolute;
 width: 250px;
 height: 48px;
-left: 1080px;
-top: 500px;
+left: 1075px;
+top: 600px;
 
 background: #008080;
 box-shadow: inset 8px 8px 14px rgba(182, 182, 182, 0.5);
@@ -92,3 +92,25 @@ border: 0.2px solid #000000;
 
 }
 
+.circle{
+position: absolute;
+width: 1842px;
+height: 1842px;
+left: -1058px;
+top: -412px;
+border-radius: 50%;
+
+background: linear-gradient(215.18deg, #3EC5E2 10.7%, #DCDEBA 50.5%);
+box-shadow: inset -4px -4px 43px 10px rgba(0, 0, 0, 0.25);
+}
+/* This was a second circle that miserably failed..."*/
+/*.circle{
+position: absolute;
+width: 412px;
+height: 412px;
+left: 1093px;
+top: 677px;
+
+background: linear-gradient(215.18deg, #3EC5E2 10.7%, #DCDEBA 57.44%);
+box-shadow: inset 4px 4px 43px 10px rgba(0, 0, 0, 0.25);
+}*/
