@@ -103,13 +103,24 @@ border-radius: 50%;
 background: linear-gradient(215.18deg, #3EC5E2 10.7%, #DCDEBA 50.5%);
 box-shadow: inset -4px -4px 43px 10px rgba(0, 0, 0, 0.25);
 }
-/* This was a second circle that miserably failed..."*/
+
+.nimbus-logo {
+position: absolute;
+width: 475.08px;
+height: 329.58px;
+left: 48px;
+top: 189px;
+
+}
+
+/*DEAD CIRCLE AHEAD*/
 /*.circle{
 position: absolute;
 width: 412px;
 height: 412px;
 left: 1093px;
 top: 677px;
+border-radius: 50%;
 
 background: linear-gradient(215.18deg, #3EC5E2 10.7%, #DCDEBA 57.44%);
 box-shadow: inset 4px 4px 43px 10px rgba(0, 0, 0, 0.25);
