@@ -2,13 +2,44 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
-  <div class="circle"></div>
-  <img class="nimbus-logo" src="NimbusLogo.png" alt="Logo">
-  <p class="page-text">Keeps your file safe.</p>
-    <div class="container">
-      <form action="authenticate.php" method="post">
-        <h1>Login</h1>
+  <style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #FFFFFF;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-container">
+  	<div class="circle"></div>
+  		<img class="nimbus-logo" src="NimbusLogo.png" alt="Logo">
+  	<p class="page-text">Keeps your file safe.</p>
+   	 <div class="fixed-container">
+      	<form action="authenticate.php" method="post">
+        <p class="page-text1">Login</p>
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="password" placeholder="Password">
         <input type="submit" value="Submit">
@@ -16,6 +47,8 @@
     </div>
   </body>
 </html>
+
+
 
 
 
