@@ -1,3 +1,5 @@
+#! /bin/bash
+
 sudo apt install openssh-server 
 sudo apt install openssh-client
 sudo apt install ufw
