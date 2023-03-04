@@ -1,54 +1,53 @@
-<<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <style>
-    /* Add some padding on document's body to prevent the content
-    to go underneath the header and footer */
-    body{        
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    .fixed-header{
-        width: 100%;
-        position: fixed;        
-        background: #FFFFFF;
-        padding: 10px 0;
-        color: #fff;
-    }
-    .fixed-header{
-        top: 0;
-    }
-    
-    .container{
-        width: 80%;
-        margin: 0 auto; /* Center the DIV horizontally */
-    }
-    nav a{
-        color: #fff;
-        text-decoration: none;
-        padding: 7px 25px;
-        display: inline-block;
-    }
-</style>
+<html>
+<head>
+	<title>Login Nimbus</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+
+		.fixed-header {
+			width: 100%;
+			position: fixed;
+			top: 0;
+			background: #FFFFFF;
+			padding: 10px 0;
+			color: #fff;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 7px 25px;
+			display: inline-block;
+		}
+	</style>
 </head>
 <body>
-    <div class="fixed-container">
-  	<div class="circle"></div>
-      <div class="circle2"></div>
-  		<img class="nimbus-logo" src="NimbusLogo.png" alt="Logo">
-  	<p class="page-text">Keeps your file safe.</p>
-   	 <div class="fixed-container">
-      	<form action="authenticate.php" method="post">
-        <p class="page-text1">Login</p>
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </body>
+	<div class="fixed-header">
+		<div class="circle2"></div>
+		<div class="circle"></div>
+		<div class="rectangle2"></div>
+		<img class="nimbus-logo" src="NimbusLogo.png" alt="Logo">
+		<img class="Logo" src="Logo.png" alt="CealLogo">
+		<p class="page-text">Keeps your file safe.</p>
+	</div>
+	<div class="container">
+		<form action="authenticate.php" method="post">
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
 </html>
-
 
 
 
