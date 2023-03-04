@@ -112,7 +112,7 @@ border: 0.2px solid #000000;
 position: absolute;
 width: 1842px;
 height: 1842px;
-left: -1058px;
+left: -958px;
 top: -412px;
 border-radius: 50%;
 
@@ -122,13 +122,26 @@ box-shadow: inset -4px -4px 43px 10px rgba(0, 0, 0, 0.25);
 
 .circle2{
 position: absolute;
-width: 634px;
-height: 634px;
-right: -135px;
-bottom: -221px;
+width: 552px;
+height: 552px;
+left: 1221px;
+top: 467px;
 border-radius: 50%;
 background: linear-gradient(215.18deg, #3EC5E2 10.7%, #DCDEBA 57.44%);
 box-shadow: inset 4px 4px 43px 10px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle2{
+position: absolute;
+width: 471px;
+height: 548px;
+left: 964px;
+top: 140px;
+
+background: #C6C6C6;
+opacity: 0.4;
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 85px;
 }
 
 .nimbus-logo {
@@ -140,6 +153,14 @@ top: 189px;
 
 }
 
+.Logo{
+position: absolute;
+width: 141.34px;
+height: 140px;
+left: 1130px;
+top: 200px;
+
+}
 .page-text {
 position: absolute;
 width: 360px;
