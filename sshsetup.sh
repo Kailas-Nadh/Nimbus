@@ -4,6 +4,7 @@ sudo apt install openssh-server
 sudo apt install openssh-client
 sudo apt install ufw
 sudo systemctl start ssh.service
+sudo systemctl enable ssh
 sudo systemctl status ssh
 sudo ufw allow ssh
 sudo ufw enable && sudo ufw reload
