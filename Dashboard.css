@@ -1,1 +1,10 @@
-
+.image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        width: 2100px;
+        background-image: url(Login7.png);
+        background-size: cover;
+        background-position: center;
+      }
