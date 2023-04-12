@@ -14,17 +14,17 @@
 
     if (file_exists($file)) {
       header('Content-Description: File Transfer');
-      //This sets the description of the file transfer that's about to take place.
+      //Sets the description of the file transfer that is about to take place.
       header('Content-Type: application/octet-stream');
-      //This sets the content type to "application/octet-stream", which is a generic binary file type.
+      //Sets the content type to "application/octet-stream", which is a generic binary file type.
       header('Content-Disposition: attachment; filename="'.basename($file).'"');
-      //This sets the disposition of the file download to "attachment", which prompts the browser to download the file instead of displaying it. It also sets the filename to the basename of the requested file.
+      //Sets the disposition of the file download to "attachment", which prompts the browser to download the file instead of displaying it. It also sets the filename to the basename of the requested file.
       header('Expires: 0');
       header('Cache-Control: must-revalidate');
       header('Pragma: public');
       //These headers are used to control caching behavior and ensure that the file is downloaded and not cached.
       header('Content-Length: ' . filesize($file));
-      //This sets the size of the file that's about to be downloaded.
+      //Sets the size of the file that's about to be downloaded.
       readfile($file);
       exit;
     } else {
