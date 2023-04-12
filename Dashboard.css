@@ -1,10 +1,75 @@
-.image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 1000px;
-        width: 2100px;
-        background-image: url(Login7.png);
-        background-size: cover;
-        background-position: center;
-      }
+.rectangle1{
+position: absolute;
+width: 522.12px;
+height: 408.59px;
+left: -285.69px;
+top: 48px;
+
+background: #5678A2;
+/*filter: blur(1px);*/
+border-radius: 64px;
+transform: rotate(-33.47deg);
+}
+
+/*.rectangle2{
+position: absolute;
+width: 734.8px;
+height: 478.66px;
+right: -430px;
+top: 335.9px;
+
+background: #5678A2;
+// filter: blur(1px);
+border-radius: 64px;
+transform: rotate(-42.23deg);
+} */
+
+.circle{
+position: absolute;
+width: 683px;
+height: 683px;
+left: calc(50% - 683px/2 - 0.5px);
+/*left: 600px;*/
+top: 59px;
+border-radius: 50%;
+background: linear-gradient(180deg, rgba(255, 137, 137, 0.19) 0%, rgba(235, 178, 178, 0.04) 20.19%, rgba(217, 217, 217, 0) 39.17%);
+}
+
+.name_rectangle{
+position: absolute;
+width: 192px;
+height: 48px;
+left: calc(50% - 192px/2 - 184px);
+top: 81px;
+background: #4370A9;
+border-radius: 16px;
+}
+
+.id_rectangle{
+position: absolute;
+width: 192px;
+height: 48px;
+left: calc(50% - 192px/2 - 184px);
+top: 141px;
+background: #4370A9;
+border-radius: 16px;
+}
+
+#userButton {
+  border: none;
+  background: none;
+  padding: 0;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  right: 24px;
+  top: 16px;
+  cursor: pointer;
+}
+
+#userButton img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  right: 32px;
+}
