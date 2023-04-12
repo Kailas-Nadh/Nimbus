@@ -1,3 +1,7 @@
+country=IN
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ap_scan=1
+
 network={
 scan_ssid=1
 ssid="CEANET"
