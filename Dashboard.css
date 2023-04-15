@@ -4,7 +4,6 @@ width: 522.12px;
 height: 408.59px;
 left: -285.69px;
 top: 48px;
-
 background: #5678A2;
 /*filter: blur(1px);*/
 border-radius: 64px;
@@ -29,7 +28,6 @@ position: absolute;
 width: 683px;
 height: 683px;
 left: calc(50% - 683px/2 - 0.5px);
-/*left: 600px;*/
 top: 59px;
 border-radius: 50%;
 background: linear-gradient(180deg, rgba(255, 137, 137, 0.19) 0%, rgba(235, 178, 178, 0.04) 20.19%, rgba(217, 217, 217, 0) 39.17%);
@@ -42,6 +40,7 @@ height: 48px;
 left: calc(50% - 192px/2 - 184px);
 top: 81px;
 background: #4370A9;
+box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.25);
 border-radius: 16px;
 }
 
@@ -52,6 +51,33 @@ height: 48px;
 left: calc(50% - 192px/2 - 184px);
 top: 141px;
 background: #4370A9;
+box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+
+.contains_name{
+box-sizing: border-box;
+position: absolute;
+width: 365px;
+height: 48px;
+left: calc(50% - 365px/2 + 96px);
+top: 81px;
+background: #EFEFEF;
+border: 1px solid #EFEFEF;
+box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+
+.contains_id{
+box-sizing: border-box;
+position: absolute;
+width: 365px;
+height: 48px;
+left: calc(50% - 365px/2 + 96px);
+top: 141px;
+background: #EFEFEF;
+border: 1px solid #8F8F8F;
+box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.25);
 border-radius: 16px;
 }
 
