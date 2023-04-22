@@ -99,3 +99,28 @@ border-radius: 16px;
   object-fit: cover;
   right: 32px;
 }
+
+.menu-button {
+  position: relative;
+}
+
+.menu-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.menu-options a {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-options a:hover {
+  text-decoration: underline;
+}
