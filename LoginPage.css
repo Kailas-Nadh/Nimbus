@@ -107,20 +107,16 @@ color: #808080;
 
 }
 
-input[type="submit"] {
+#submitButton {
+
 position: absolute;
 width: 250px;
 height: 48px;
 left: calc(50% - 238px/2);
 /*left: 825px;*/
 top: 670px;
-
 background: #3575C2;
 border-radius: 17px;
-
-
-
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
@@ -129,6 +125,6 @@ line-height: 36px;
 color: #EFEFEF;
 
 border: 0.2px solid #3575C2;
-
+cursor: pointer;
 }
 }
