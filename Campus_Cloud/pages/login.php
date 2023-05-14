@@ -12,7 +12,7 @@
             $password = mysqli_real_escape_string($con, $pw);  
           
             $sql = "select username from users where username = '$un' and password = '$pw'";  
-            $result = mysqli_query($con, $sql);  
+            $result = mysqli_query($con, $sql);  //function returns a result set for SELECT
             $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
             $count = mysqli_num_rows($result);  
               
