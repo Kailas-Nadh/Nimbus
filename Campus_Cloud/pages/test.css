@@ -1,0 +1,301 @@
+/* Fixing the scrolling of the page */
+.fixed-header {
+			width: 100%;
+			position: fixed;
+			top: 0;
+			background: #5A697B;
+			padding: 4px 0;
+			color: #000;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 7px 25px;
+			display: inline-block;
+		}
+
+
+
+/* The two rectangles and the semi-circle in the background are defined here */
+.rectangle1{
+position: absolute;
+width: 522.12px;
+height: 408.59px;
+left: -285.69px;
+top: 48px;
+background: #5678A2;
+/*filter: blur(1px);*/
+border-radius: 64px;
+transform: rotate(-33.47deg);
+}
+
+.rectangle2{
+position: absolute;
+width: 734.8px;
+height: 478.66px;
+right: -430px;
+top: 335.9px;
+background: #5678A2;
+/*filter: blur(1px);*/
+border-radius: 64px;
+transform: rotate(-42.23deg);
+}
+
+.circle{
+position: absolute;
+width: 683px;
+height: 683px;
+left: calc(50% - 683px/2 - 0.5px);
+/*left: 600px;*/
+top: 59px;
+border-radius: 50%;
+background: linear-gradient(180deg, rgba(255, 137, 137, 0.19) 0%, rgba(235, 178, 178, 0.04) 20.19%, rgba(217, 217, 217, 0) 39.17%);
+}
+
+/* Rest of the code remains unchanged */
+/* The big button that is meant for viewing files */
+#viewButton {
+/*Position and size of the button is set here */
+position: absolute;
+width: 349px;
+height: 151px;
+left: calc(50% - 349px/2 - 194.5px);
+top: 360px;
+
+/*The background color, shadow and stroke is defined here */
+background: #5779A2;
+box-shadow: 0px 4px 58px 1px rgba(0, 0, 0, 0.25);
+border-radius: 32px;
+
+/* The font is defined here */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 118.5%;
+text-align: center;
+letter-spacing: -0.035em;
+color: #EFEFEF;
+border: 0.2px solid #3575C2;
+
+/* While hovering over the pointer you can see a pointer */
+cursor: pointer;
+
+}
+
+#logout {
+    position: absolute;
+width: 167px;
+height: 32px;
+right: 72px;
+top: 61px;
+
+background: #EFEFEF;
+opacity: 0.8;
+backdrop-filter: blur(51px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 8px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #5A697B;
+cursor: pointer;
+}
+
+#change_pswd {
+position: absolute;
+width: 167px;
+height: 32px;
+right: 72px;
+top: 27px;
+
+background: #EFEFEF;
+opacity: 0.8;
+backdrop-filter: blur(51px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 8px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #5A697B;
+cursor: pointer;
+}
+
+#username {
+    position: absolute;
+    /*float: inherit;*/
+    color: #EFEFEF;
+    font-size: 70px;
+    font-size: 40px;
+    top: 28px;
+    left: 28px;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 84px;
+    
+ }
+
+#upload_btn{
+	position: absolute;
+width: 119px;
+height: 36px;
+left: calc(50% - 119px/2 + 110px);
+top: 648px;
+background: #EFEFEF;
+color: #5779A2;
+box-shadow: 0px 4px 29px 1px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+font-family: 'Raleway';
+}
+
+/*#file_name {
+    color: rgb(3, 14, 44);
+    background-color: rgb(83, 100, 100);
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    top: 518px;
+    left: calc(50% - 166px/2 + 123px);
+}*/
+
+#file_name {
+	position: absolute;
+	width: 166px;
+height: 50px;
+left: calc(50% - 166px/2 + 123px);
+top: 582px;
+width: 287px;
+height: 114px;
+color: #EFEFEF;
+background: #5779A2;
+box-shadow: 0px 4px 29px 1px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+
+
+#uploadButton{
+/*Position and size of the button is set here */
+position: absolute;
+width: 349px;
+height: 151px;
+left: calc(50% - 349px/2 + 194.5px);
+top: 360px;
+
+/*The background color, shadow and stroke is defined here */
+background: #5779A2;
+box-shadow: 0px 4px 58px 1px rgba(0, 0, 0, 0.25);
+border-radius: 32px;
+
+/* The font is defined here */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 118.5%;
+text-align: center;
+letter-spacing: -0.035em;
+color: #EFEFEF;
+border: 0.2px solid #3575C2;
+
+/* While hovering over the pointer you can see a pointer */
+cursor: pointer;
+}
+
+
+.View{
+position: absolute;
+width: 112px;
+height: 112px;
+left: calc(50% - 112px/2 - 195px);
+top: 290px;
+}
+
+.Upload{
+position: absolute;
+width: 112px;
+height: 112px;
+left: calc(50% - 112px/2 + 194px);
+top: 290px;
+}
+
+.UserImage{
+position: absolute;
+width: 56px;
+height: 56px;
+right: 16px;
+top: 30px;
+
+}
+
+#view-button{
+background: #EFEFEF;
+border: 1px solid #5779A2;
+backdrop-filter: blur(51px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+width: 100px;
+height: 30px;
+}
+
+#download-button{
+background: #EFEFEF;
+border: 1px solid #EFEFEF;
+backdrop-filter: blur(51px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #EFEFEF;
+border-radius: 10px;
+width: 100px;
+height: 30px;
+}
+#delete-button{
+background: #5A697B;
+border: 2px solid #EFEFEF;
+backdrop-filter: blur(51px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #EFEFEF;
+width: 100px;
+height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+

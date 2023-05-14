@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Login Nimbus</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<style>
+		.fixed-header {
+			width: 100%;
+			position: fixed;
+			top: 0;
+			background: #5A697B;
+			padding: 4px 0;
+			color: #000;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 7px 25px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body bgcolor="#5A697B">
+	<div class="fixed-header">
+		 <div class="rectangle1"></div> 
+		<div class="rectangle2"></div>
+		<div class="circle"></div>
+
+		 <div class="mainrectangle"> </div> 
+		 <div class="rectangle-form"></div>
+		<img class="Logo" src="Logo.png" alt="CealLogo">
+	</div>
+	<div class="container">
+		<form name="f1" action="login.php" onsubmit="return validation()" method="post">
+			<!--<input type="text" id="user" name="user" placeholder="Username">
+			<button type="submit" name="submit">LOGIN</button>
+			<input type="password" id="pass" name="pass" placeholder="Password">-->
+			<input type="text" id="user_name" name="username" placeholder="Username"> 
+            		<input type="password" id="pass_word" name="password" placeholder="Password">
+            		<input type="submit" id="btn" value="Submit">
+            		
+            		
+		</form>
+	</div>
+	<script>  
+        function validation() {  
+            var id = document.f1.username.value;  
+            var ps = document.f1.password.value;  
+            if(id.length == "" && ps.length == "") {  
+                alert("User Name and Password fields are empty");  
+                return false;  
+            }  
+            else {  
+                if(id.length == "") {  
+                    alert("User Name is empty");  
+                    return false;  
+                }   
+                if (ps.length == "") {  
+                    alert("Password field is empty");  
+                    return false;  
+                }  
+            }                             
+        }  
+    </script>  
+</body>
+</html>
