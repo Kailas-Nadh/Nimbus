@@ -139,7 +139,7 @@
             echo $format;
         }*/
 //<div style="position: fixed;width: 320px;height: 48px;right: calc(50% - 136px/2 + 140px);top: 560px;color: #EFEFEF;font-size: 24px;">
-
+//This line checks if the "change" button was clicked in the form, indicating that the user wants to change their password.
         if(isset($_POST["change_pswd"]))
         {   
             $format = '<div>
@@ -209,21 +209,23 @@
                    </div>';
             echo $format;
         }
-
+//This line checks if the "change" button was clicked in the form, indicating that the user wants to change their password.
         if(isset($_POST["change"]))
         { 
-            $curp=$_POST["currect_password"];
+//retrieve the values of the "current password", "new password", and "confirm password" fields from the form submission.            
+		$curp=$_POST["currect_password"];
             $newp=$_POST["new_password"];
             $conp=$_POST["confirm_password"];
-
+//This SQL query retrieves the current password of the user from the database, based on their username.
             $sql = "select password from users where username='$username';";
             $result = $conn->query($sql);
-            
+  //If there is a result from the SQL query (i.e. the user was found in the database), this code retrieves the password from the result and stores it in a variable called $old_password          
             if ($result->num_rows > 0) {
               while($row = $result->fetch_assoc()) {
                 $old_password = $row["password"];
               }
             }
+//If the current password entered by the user does not match the old password retrieved from the database, an error message is displayed using a JavaScript alert.
             if($curp != $old_password) {
                 echo '<script type="text/javascript">';
                 echo 'alert("Old Password Not Match")';
